@@ -18,7 +18,7 @@ def application_model_code
 CODE
 end
 
-def uuid_setup
+def set_uuid_primary_key
   migration_name = "enable_uuid"
   generate(:migration, migration_name)
   enable_uuid_migration_file = Dir["db/migrate/*#{migration_name}.rb"].first

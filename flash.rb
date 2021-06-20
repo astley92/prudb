@@ -1,4 +1,4 @@
-def set_flash
+def set_flash_alerts
   file 'app/views/layouts/_alerts.html.erb', <<-CODE
 <% if flash.any? %>
   <% flash.each do |type, msg|  %>

@@ -1,4 +1,4 @@
-def postgres_setup
+def setup_postgres
   remove_file 'config/database.yml'
 
   file 'config/database.yml', <<-CODE

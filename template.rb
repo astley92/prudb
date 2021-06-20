@@ -1,21 +1,12 @@
-require_relative('gems.rb')
-require_relative('postgres.rb')
-require_relative('uuid.rb')
-require_relative('devise.rb')
-require_relative('routes.rb')
-require_relative('flash.rb')
-require_relative('environments/development.rb')
-require('pry')
+require_relative('file_loader.rb')
 
-gems_setup
-postgres_setup
-uuid_setup
+setup_gems
+setup_postgres
+set_uuid_primary_key
 set_routes
-set_flash
-devise_setup
+set_flash_alerts
+setup_devise
 
 after_bundle do
-  git :init
-  git add: "."
-  git commit: %Q{ -m 'Initial commit' }
+  git_inital_commit
 end
