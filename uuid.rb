@@ -33,7 +33,5 @@ def set_uuid_primary_key
   }
 
   rails_command("db:create")
-  rails_command("db:migrate")
-
   file('config/initializers/generators.rb', generators_code)
 end

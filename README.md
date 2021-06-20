@@ -8,7 +8,7 @@
 
 **D** - Devise
 
-**B** - Bootstrap 4
+**B** - Bootstrap 5
 
 ---
 
