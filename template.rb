@@ -1,10 +1,6 @@
-class Thor
-  module Actions
-    module ClassMethods
-      def source_paths
-        [__dir__]
-      end
-    end
+class Rails::Generators::AppGenerator
+  def source_paths
+    [__dir__]
   end
 end
 
