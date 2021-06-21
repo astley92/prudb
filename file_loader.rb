@@ -1,4 +1,5 @@
 require_relative('gems.rb')
+require_relative('rspec.rb')
 require_relative('bootstrap.rb')
 require_relative('git.rb')
 require_relative('postgres.rb')

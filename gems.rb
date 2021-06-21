@@ -3,4 +3,8 @@ def setup_gems
 
   gem 'devise'
   gem 'pg'
+
+  gem_group :development, :test do
+    gem "rspec-rails"
+  end
 end
