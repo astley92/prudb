@@ -1,5 +1,11 @@
-def source_paths
-  [__dir__]
+class Thor
+  module Actions
+    module ClassMethods
+      def source_paths
+        [__dir__]
+      end
+    end
+  end
 end
 
 require_relative('file_loader.rb')
