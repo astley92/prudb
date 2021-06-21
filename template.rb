@@ -1,3 +1,7 @@
+def source_paths
+  [__dir__]
+end
+
 require_relative('file_loader.rb')
 
 setup_gems
