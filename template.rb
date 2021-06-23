@@ -1,6 +1,5 @@
 def apply_template!
   say("Using template to setup gems")
-  gsub_file("Gemfile", /^gem\s+["']sqlite3["'].*$/,'')
   gem('devise')
   gem_group(:development, :test) do
     gem("rspec-rails")
